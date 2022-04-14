@@ -1,14 +1,5 @@
 <?php
 
-// Otrzymywanie danych z modelu + oraz zewnętrzne dane (plik JSON)
-// define("JSONFile", "../../dataset/users.json");
-// require_once 'model.php';
-
-// $jsonData = new Model(JSONFile);
-
-// Praca z formularzem (add/remove wiersz) + wywołanie metody modelu Model dla odpowiedniego przetwarzania danych na JSON pliku
-// Przygotowanie zmiennych dla pliku View.php
-
 class Controller
 {   
     private $jsonData;
