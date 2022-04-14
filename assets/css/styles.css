@@ -1,0 +1,143 @@
+:root {
+	font-size: 0.875em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+table {
+	border: 1px solid #eee;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 1.2rem;
+}
+
+table th {
+	font-weight: bold;
+	padding: .3rem;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+
+table td {
+	padding: .3rem .7rem;
+	border: 1px solid #eee;
+	text-align: left;
+}
+
+table td:last-child {
+	text-align: center;
+}
+
+table tr:nth-child(odd){
+	background: #FFF;
+}
+table tr:nth-child(even){
+	background: #F7F7F7;
+}
+
+.button {
+	margin: .25rem .2rem;
+	padding: .7rem 1.4rem;
+	
+	display: inline-block;
+	width: 10rem;
+	
+	text-decoration: none;
+	background-color: #b50e38;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	border: none;
+	cursor: pointer;
+	
+	opacity: 0.7;
+	transition: 0.2s;
+}
+
+.button:hover {
+	opacity: 1
+}
+
+.modal {
+	display: none;
+}
+
+.modal-background {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-body {
+	position: fixed;
+	top: 3em;	
+	right: 20%;
+	left: 20%;
+	padding: 2em 3em;
+	background-color: white;
+	overflow: none;
+}
+
+.text-field {
+	margin-bottom: 1rem;
+}
+
+.text-fields {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+}
+
+.text-fields .text-field {
+	flex-grow: 1;
+}
+
+.text-fields > * + * {
+	margin-left: 2.5rem;
+}
+
+.textfield_label {
+	display: block;
+	margin-bottom: 0.25rem;
+	font-size: 1rem;
+}
+
+.textfield_input {
+	display: block;
+	width: 100%;
+	height: 2rem;
+
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+
+	background-color: #fff;
+	border: 1px solid #bdbdbd;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.textfield_input::placeholder {
+	color: #212529;
+	opacity: 0.4;
+}
+
+.textfield_input:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #bdbdbd;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+p {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
